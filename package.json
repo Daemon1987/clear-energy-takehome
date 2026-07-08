@@ -1,0 +1,18 @@
+{
+  "name": "clear-energy-takehome",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "api": "json-server mock-api.json --port 4000",
+    "customer": "npm run start --workspace apps/customer",
+    "driver": "npm run start --workspace apps/driver",
+    "admin": "npm run start --workspace apps/admin-mobile",
+    "test": "npm run test --workspace packages/shared",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "devDependencies": {
+    "json-server": "^0.17.4",
+    "typescript": "~5.6.3"
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "orders": [
+    {
+      "id": "SO-9482",
+      "customerId": "c-001",
+      "customerName": "Raj Kumar",
+      "address": "H-No 8-2-704, Road No 12, Banjara Hills, Hyderabad — 500034",
+      "amountPaise": 118000,
+      "sku": { "code": "HPCL-DOM-14.2", "name": "14.2 kg Domestic LPG (HPCL)", "qty": 1 },
+      "status": "out_for_delivery",
+      "placedAt": "2026-05-23T03:42:00Z",
+      "eta": "2026-05-23T11:30:00Z"
+    },
+    {
+      "id": "SO-9421",
+      "customerId": "c-001",
+      "customerName": "Raj Kumar",
+      "address": "H-No 8-2-704, Road No 12, Banjara Hills, Hyderabad — 500034",
+      "amountPaise": 52200,
+      "sku": { "code": "BPCL-MINI-5", "name": "5 kg Mini Domestic LPG (BPCL)", "qty": 1 },
+      "status": "delivered",
+      "placedAt": "2026-05-03T08:12:00Z",
+      "eta": null
+    },
+    {
+      "id": "SO-9407",
+      "customerId": "c-001",
+      "customerName": "Raj Kumar",
+      "address": "H-No 8-2-704, Road No 12, Banjara Hills, Hyderabad — 500034",
+      "amountPaise": 284400,
+      "sku": { "code": "IOCL-COM-19", "name": "19 kg Commercial LPG (IOCL)", "qty": 1 },
+      "status": "delivered",
+      "placedAt": "2026-04-28T05:30:00Z",
+      "eta": null
+    },
+    {
+      "id": "SO-9398",
+      "customerId": "c-001",
+      "customerName": "Raj Kumar",
+      "address": "H-No 8-2-704, Road No 12, Banjara Hills, Hyderabad — 500034",
+      "amountPaise": 118000,
+      "sku": { "code": "HPCL-DOM-14.2", "name": "14.2 kg Domestic LPG (HPCL)", "qty": 1 },
+      "status": "cancelled",
+      "placedAt": "2026-04-24T10:11:00Z",
+      "eta": null
+    }
+  ],
+
+  "trips": [
+    {
+      "seq": 1,
+      "orderId": "SO-9421",
+      "driverId": "d-101",
+      "customerName": "Suresh K",
+      "sku": "5 kg × 1",
+      "address": "Banjara · 1.2 km",
+      "distanceKm": 1.2,
+      "status": "done",
+      "etaMin": null
+    },
+    {
+      "seq": 2,
+      "orderId": "SO-9482",
+      "driverId": "d-101",
+      "customerName": "Raj Kumar",
+      "sku": "14.2 kg × 1",
+      "address": "Banjara · 0.4 km",
+      "distanceKm": 0.4,
+      "status": "active",
+      "etaMin": 8
+    },
+    {
+      "seq": 3,
+      "orderId": "SO-9485",
+      "driverId": "d-101",
+      "customerName": "Anand Patel",
+      "sku": "19 kg × 2",
+      "address": "Banjara · 1.8 km",
+      "distanceKm": 1.8,
+      "status": "pending",
+      "etaMin": 22
+    },
+    {
+      "seq": 4,
+      "orderId": "PR-1140",
+      "driverId": "d-101",
+      "customerName": "Lakshmi V",
+      "sku": "5 kg pickup",
+      "address": "Jubilee · 4.2 km",
+      "distanceKm": 4.2,
+      "status": "pending",
+      "etaMin": 45
+    },
+    {
+      "seq": 5,
+      "orderId": "SO-9487",
+      "driverId": "d-101",
+      "customerName": "Krishna M",
+      "sku": "14.2 kg × 1",
+      "address": "Jubilee · 5.1 km",
+      "distanceKm": 5.1,
+      "status": "pending",
+      "etaMin": 58
+    }
+  ],
+
+  "pending-actions": [
+    {
+      "id": "CT-1882",
+      "adminId": "a-201",
+      "category": "cash",
+      "summary": "Suresh R · ₹4,872 cash transfer (partial)",
+      "priority": "high",
+      "ageMinutes": 30,
+      "slaMinutes": 60,
+      "action": "approve"
+    },
+    {
+      "id": "CT-1881",
+      "adminId": "a-201",
+      "category": "cash",
+      "summary": "Rakesh M · ₹6,210 cash transfer",
+      "priority": "high",
+      "ageMinutes": 45,
+      "slaMinutes": 60,
+      "action": "approve"
+    },
+    {
+      "id": "MI-E-2245",
+      "adminId": "a-201",
+      "category": "mi_empty",
+      "summary": "Rakesh M · MI Empty (14.2 kg × 5, 19 kg × 2)",
+      "priority": "med",
+      "ageMinutes": 30,
+      "slaMinutes": 1440,
+      "action": "approve"
+    },
+    {
+      "id": "MI-E-2241",
+      "adminId": "a-201",
+      "category": "mi_empty",
+      "summary": "Naveen K · MI Empty (14.2 kg × 8)",
+      "priority": "breached",
+      "ageMinutes": 180,
+      "slaMinutes": 1440,
+      "action": "approve"
+    },
+    {
+      "id": "SO-9491",
+      "adminId": "a-201",
+      "category": "prior_delivery",
+      "summary": "Rakesh K · prior delivery today 4 PM · +₹100",
+      "priority": "med",
+      "ageMinutes": 15,
+      "slaMinutes": 120,
+      "action": "decide"
+    },
+    {
+      "id": "SO-9481",
+      "adminId": "a-201",
+      "category": "unassigned",
+      "summary": "Priya R · 5 kg × 2 · today 1–4 PM unassigned",
+      "priority": "high",
+      "ageMinutes": 12,
+      "slaMinutes": 60,
+      "action": "assign"
+    },
+    {
+      "id": "CUS-1843",
+      "adminId": "a-201",
+      "category": "kyc",
+      "summary": "Rajesh N · Aadhaar back rejected",
+      "priority": "low",
+      "ageMinutes": 1440,
+      "slaMinutes": 2880,
+      "action": "review"
+    }
+  ]
+}
