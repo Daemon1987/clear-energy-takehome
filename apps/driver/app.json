@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Clear Energy Driver",
+    "slug": "clear-energy-driver",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "android": { "package": "com.clearenergy.driver" },
+    "ios": { "bundleIdentifier": "com.clearenergy.driver" }
+  }
+}

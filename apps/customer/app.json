@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Clear Energy",
+    "slug": "clear-energy-customer",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "android": { "package": "com.clearenergy.customer" },
+    "ios": { "bundleIdentifier": "com.clearenergy.customer" }
+  }
+}
