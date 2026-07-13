@@ -6,7 +6,14 @@
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
-    "android": { "package": "com.clearenergy.customer" },
-    "ios": { "bundleIdentifier": "com.clearenergy.customer" }
+    "android": {
+      "package": "com.clearenergy.customer"
+    },
+    "ios": {
+      "bundleIdentifier": "com.clearenergy.customer"
+    },
+    "plugins": [
+      "expo-status-bar"
+    ]
   }
 }
