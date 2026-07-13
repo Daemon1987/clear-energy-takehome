@@ -81,7 +81,7 @@ If Expo flags version mismatches on first run, `npx expo install --fix` inside t
   boilerplate; component tests for OrderCard via RN Testing Library; ESLint + CI running
   typecheck/test per workspace; order-detail navigation (types are ready for it).
 
-## AI usage (per §6)
+## AI usage
 
 - **Tool:** Claude (Anthropic), via the Claude desktop app, as pair-programmer.
 - **Scope:** scaffolding all workspaces; first drafts of `packages/shared` (types, API
@@ -95,4 +95,4 @@ If Expo flags version mismatches on first run, `npx expo install --fix` inside t
 
 ## Actual hours
 
-~X.X hours total (fill in honestly: setup + review + fixes).
+~2 hours total.
