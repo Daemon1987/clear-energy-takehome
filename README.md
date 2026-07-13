@@ -1,6 +1,6 @@
 # Clear Energy — 3-App Take-Home
 
-Three Expo (React Native) apps — **Customer**, **Driver**, **Admin Mobile** — sharing one
+Three Expo (React Native) apps **Customer**, **Driver**, **Admin Mobile** sharing one
 package (`@clear-energy/shared`) for types, the API client, design tokens, and the
 `<OrderCard />` component. One screen per app, four states each
 (loading / empty / error / success).
