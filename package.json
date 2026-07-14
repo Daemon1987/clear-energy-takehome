@@ -7,7 +7,7 @@
     "packages/*"
   ],
   "scripts": {
-    "api": "json-server mock-api.json --port 4000",
+    "api": "json-server mock-api.json --port 4000 --host 0.0.0.0",
     "customer": "npm run start --workspace apps/customer",
     "driver": "npm run start --workspace apps/driver",
     "admin": "npm run start --workspace apps/admin-mobile",
